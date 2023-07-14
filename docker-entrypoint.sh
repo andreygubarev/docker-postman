@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eux
+set -eu
 
 if [ -n "${POSTMAN_API_KEY}" ]; then
     postman login --with-api-key "${POSTMAN_API_KEY}"
